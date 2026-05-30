@@ -1,0 +1,96 @@
+<!-- PAGE : ABOUT -->
+<section
+    id="about" class="page wrapper" data-x="-16500" data-y="-1250" data-rotate="0" data-scale="14">
+    <!-- PAGE TITLE -->
+    <h2 class="caption">
+        <span>ABOUT ME</span>
+    </h2>
+    <div class="iscroll-wrapper">
+        <div
+            class="scroller container">
+            <!--row-->
+            <div
+                class="row">
+                <!--column 3/12-->
+                <div
+                    class="span3 profile-image">
+                    <!-- te-wrapper -->
+                    <div
+                        id="te-wrapper" class="te-wrapper">
+                        <!-- images -->
+                        <div class="te-images">
+                            <img src="images/avatar-l.png" alt="profile picture">
+                                <img src="images/avatar-m.png" alt="profile picture"></div>
+                                <!-- images -->
+                                <!-- cover -->
+                                <div class="te-cover">
+                                    <img src="images/avatar-l.png" alt="profile picture"></div>
+                                    <!-- cover -->
+                                    <!-- transition -->
+                                    <div class="te-transition">
+                                        <div class="te-card">
+                                            <div class="te-front"></div>
+                                            <div class="te-back"></div>
+                                        </div>
+                                    </div>
+                                    <!-- transition -->
+                                </div>
+                                <!-- te-wrapper -->
+                            </div>
+                            <!--column 3/12-->
+                            <!--column 4/12-->
+                            <div
+                                class="span4">
+                                <!-- about me text -->
+                                <h2>{{ site.person.headline | safe }}</h2>
+                                <p>{{ site.person.bio }}</p>
+                                <!-- about me text -->
+                                <h3>Let's socialize!</h3>
+                                <!-- social icons -->
+                                <ul class="social">
+                                    {% for item in site.social %}
+                                        <li>
+                                            <a class="{{ item.class }}" href="{{ item.url }}" title="{{ item.label }}">{{ item.icon | safe }}</a>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                                <!-- social icons -->
+                            </div>
+                            <!--column 4/12-->
+                            <!--column 5/12-->
+                            <div
+                                class="span5">
+                                <!-- personal info -->
+                                <ul class="personal-info">
+                                    <li>
+                                        <span class="title">ROLE</span>
+                                        <span class="value">{{ site.person.role }}</span>
+                                    </li>
+                                    <li>
+                                        <span class="title">LOCATION</span>
+                                        <span class="value">{{ site.person.location }}</span>
+                                    </li>
+                                    <li>
+                                        <span class="title">FREELANCE</span>
+                                        <span class="value">{{ site.person.freelance }}</span>
+                                    </li>
+                                    <li>
+                                        <span class="title">STACK</span>
+                                        <span class="value">{{ site.person.tech }}</span>
+                                    </li>
+                                    <li>
+                                        <span class="title">FOCUS</span>
+                                        <span class="value">{{ site.person.focus }}</span>
+                                    </li>
+                                </ul>
+                                <!-- personal info -->
+                            </div>
+                            <!--column 5/12-->
+                        </div>
+                        <!--row-->
+                    </div>
+                    <!--end scroller-->
+                </div>
+                <!--iscroll-wrapper-->
+            </section>
+            <!-- PAGE : ABOUT -->

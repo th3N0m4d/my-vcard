@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+
+    <title>{{ title }} | {{ site.person.name }}</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="{{ site.meta.description }}">
+    <meta name="keywords" content="vcard, html5, portfolio">
+    <meta name="author" content="{{ site.meta.author }}">
+
+    <!-- FONTS -->
+    <link href='https://fonts.googleapis.com/css?family=Brawler' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Rokkitt:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.transitions.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    {% if site.skin.color %}<link rel="stylesheet" type="text/css" href="{{ site.skin.color }}">{% endif %}
+
+    <!-- SCRIPTS -->
+    <!--[if lte IE 9]><script src="js/IE9.js"></script><![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script>$(function() { $(".portfolio-single").fitVids(); })</script>
+
+</head>
+
+<body>
+
+    <div class="portfolio-single container">
+
+        <div class="row">
+
+            <!-- TITLE - column 8/12 -->
+            <div class="span8 portfolio-field portfolio-title">
+                <h2>{{ title | upper }}</h2>
+            </div>
+            <!-- TITLE - column 8/12 -->
+
+
+            <!-- PORTFOLIO-NAV - column 4/12 -->
+            <div class="span4 portfolio-field portfolio-nav">
+                {% set currentIndex = -1 %}
+                {% for item in collections.portfolio %}
+                    {% if item.url == page.url %}{% set currentIndex = loop.index0 %}{% endif %}
+                {% endfor %}
+                {% if currentIndex > 0 %}
+                <a class="icon button prev ajax" href="{{ collections.portfolio[currentIndex - 1].url }}">&lt;</a>
+                {% endif %}
+                <a class="icon button back" href="/#/portfolio">&#194;</a>
+                {% if currentIndex < (collections.portfolio | length) - 1 %}
+                <a class="icon button next ajax" href="{{ collections.portfolio[currentIndex + 1].url }}">=</a>
+                {% endif %}
+            </div>
+            <!-- PORTFOLIO-NAV - column 4/12 -->
+
+
+            <!-- PORTFOLIO-IMAGES - column 8/12 -->
+            <div class="span8 portfolio-field">
+                {% for img in images %}
+                <img src="{{ img }}" alt="{{ title }}">
+                {% endfor %}
+            </div>
+            <!-- PORTFOLIO-IMAGES - column 8/12 -->
+
+
+            <!-- PORTFOLIO SIDEBAR - column 4/12 -->
+            <div class="span4 portfolio-field">
+
+                <h3>Description</h3>
+                {{ content | safe }}
+
+                {% if client %}
+                <h3>Client</h3>
+                <p>{{ client }}</p>
+                {% endif %}
+
+                {% if technologies %}
+                <h3>Technology</h3>
+                <ul class="tags">
+                    {% for tech in technologies %}
+                    <li><a>{{ tech }}</a></li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+
+                {% if launchUrl %}
+                <div class="launch">
+                    <a href="{{ launchUrl }}" class="btn">LAUNCH PROJECT</a>
+                </div>
+                {% endif %}
+
+            </div>
+            <!-- PORTFOLIO SIDEBAR - column 4/12 -->
+
+
+            <!-- PORTFOLIO-NAV BOTTOM - column 12/12 -->
+            <div class="span12 portfolio-field portfolio-nav bottom">
+                {% if currentIndex > 0 %}
+                <a class="icon button prev ajax" href="{{ collections.portfolio[currentIndex - 1].url }}">&lt;</a>
+                {% endif %}
+                <a class="icon button back" href="/#/portfolio">&#194;</a>
+                {% if currentIndex < (collections.portfolio | length) - 1 %}
+                <a class="icon button next ajax" href="{{ collections.portfolio[currentIndex + 1].url }}">=</a>
+                {% endif %}
+            </div>
+            <!-- PORTFOLIO-NAV BOTTOM - column 12/12 -->
+
+        </div>
+
+    </div>
+
+</body>
+</html>

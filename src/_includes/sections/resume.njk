@@ -1,0 +1,96 @@
+        <!-- PAGE : RESUME -->
+        <section id="resume" class="page wrapper resume" data-x="1500" data-y="250" data-rotate="-90" data-scale="16">
+
+            <!-- PAGE TITLE -->
+            <h2 class="caption"><span>RESUME</span></h2>
+
+            <div class="iscroll-wrapper">
+                <div class="scroller container">
+
+                    <!--row-->
+                    <div class="row">
+
+                        <!--column 6/12-->
+                        <div class="span6">
+
+                            <!-- EMPLOYMENT -->
+                            <div class="history-group">
+                                <h3><span class="label black">Employment</span></h3>
+                                {% for job in site.employment %}
+                                <div class="history-unit">
+                                    <h4>{{ job.title }} <span class="work-time">{{ job.period }}</span></h4>
+                                    <h5>{{ job.company }}</h5>
+                                    <p>{{ job.description }}</p>
+                                </div>
+                                {% endfor %}
+                            </div>
+                            <!-- EMPLOYMENT -->
+
+
+                            <!-- EDUCATION -->
+                            <div class="history-group">
+                                <h3><span class="label black">Education</span></h3>
+                                {% for edu in site.education %}
+                                <div class="history-unit">
+                                    <h4>{{ edu.title }} <span class="work-time">{{ edu.period }}</span></h4>
+                                    <h5>{{ edu.institution }}</h5>
+                                    <p>{{ edu.description }}</p>
+                                </div>
+                                {% endfor %}
+                            </div>
+                            <!-- EDUCATION -->
+
+                            <div class="launch cv">
+                                <a href="{{ site.person.cvUrl }}" class="btn">DOWNLOAD CV</a>
+                            </div>
+
+                        </div>
+                        <!--column 6/12-->
+
+
+                        <!--column 5/12-->
+                        <div class="span5 offset1">
+
+                            <!-- DEV SKILLS -->
+                            <div class="history-group">
+                                <h3><span class="label black">Development Skills</span></h3>
+                                {% for skill in site.skills.development %}
+                                <div class="history-unit">
+                                    <h4>{{ skill.name }}</h4>
+                                    <div class="bar" data-percent="{{ skill.percent }}">
+                                        <div class="progress"></div>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                            <!-- DEV SKILLS -->
+
+
+                            <!-- DESIGN SKILLS -->
+                            <div class="history-group">
+                                <h3><span class="label black">Design Skills</span></h3>
+                                {% for skill in site.skills.design %}
+                                <div class="history-unit">
+                                    <h4>{{ skill.name }}</h4>
+                                    <div class="bar" data-percent="{{ skill.percent }}">
+                                        <div class="progress"></div>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                            <!-- DESIGN SKILLS -->
+
+                        </div>
+                        <!--column 5/12-->
+
+
+                    </div>
+                    <!--row-->
+
+                </div>
+                <!--end scroller-->
+            </div>
+            <!--iscroll-wrapper-->
+
+        </section>
+        <!-- PAGE : RESUME -->

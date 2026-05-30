@@ -1,0 +1,5 @@
+{
+  "layout": "portfolio-layout.njk",
+  "tags": ["portfolio"],
+  "permalink": "portfolio-item-{{ page.fileSlug }}.html"
+}
