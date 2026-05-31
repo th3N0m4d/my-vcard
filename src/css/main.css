@@ -1226,7 +1226,12 @@ ul.personal-info.contact-form .title:after {
   .portfolio-field h3 {
     margin-top: 1em;
   }
-  .launch {
+  .launch.cv {
+    display: flex;
+    justify-content: center;
+  }
+  .launch.cv .btn {
+    width: 100%;
     text-align: center;
   }
   .safe-mod #header .title {
@@ -1648,18 +1653,18 @@ a.btn:visited:hover,
   line-height: 1.6;
 }
 .skill-group--cloud .skill-pills li {
-  background: #E6F4FF;
+  background: #e6f4ff;
   color: #1a5a8a;
 }
 .skill-group--iac .skill-pills li {
-  background: #F3E8FF;
+  background: #f3e8ff;
   color: #5b2d8a;
 }
 .skill-group--security .skill-pills li {
-  background: #FFEAEA;
+  background: #ffeaea;
   color: #8a1a1a;
 }
 .skill-group--languages .skill-pills li {
-  background: #E8F7EE;
+  background: #e8f7ee;
   color: #1a6b3a;
 }
