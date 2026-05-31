@@ -1,0 +1,125 @@
+---
+layout: cv-layout.njk
+permalink: /cv/
+---
+
+<div class="cv-container">
+
+    <!-- HEADER -->
+    <header class="cv-header">
+        <div class="cv-header__identity">
+            <h1>{{ site.person.name }}</h1>
+            <p class="cv-header__tagline">{{ site.person.tagline }}</p>
+        </div>
+        <div class="cv-header__meta">
+            <span>{{ site.person.location }}</span>
+            {% for item in site.social %}
+            <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.label }}</a>
+            {% endfor %}
+            {% if site.person.cvUrl %}<button class="cv-btn" onclick="window.print()">Print / Save as PDF</button>{% endif %}
+        </div>
+    </header>
+
+    <div class="cv-body">
+
+        <!-- LEFT COLUMN -->
+        <div class="cv-col cv-col--left">
+
+            <!-- BIO -->
+            <section class="cv-section">
+                <h2 class="cv-section__title">Profile</h2>
+                <p>{{ site.person.bio }}</p>
+            </section>
+
+            <!-- DETAILS -->
+            <section class="cv-section">
+                <h2 class="cv-section__title">Details</h2>
+                <dl class="cv-details">
+                    <dt>Role</dt><dd>{{ site.person.role }}</dd>
+                    <dt>Location</dt><dd>{{ site.person.location }}</dd>
+                    <dt>Infra</dt><dd>{{ site.person.infra }}</dd>
+                    <dt>Domains</dt><dd>{{ site.person.domains }}</dd>
+                    <dt>Focus</dt><dd>{{ site.person.focus }}</dd>
+                </dl>
+            </section>
+
+            <!-- SKILLS -->
+            <section class="cv-section">
+                <h2 class="cv-section__title">Skills</h2>
+                {% for key, group in site.skills %}
+                <div class="cv-skill-group cv-skill-group--{{ key }}">
+                    <h3 class="cv-skill-group__title">{{ group.label }}</h3>
+                    <ul class="cv-pills">
+                        {% for item in group.items %}
+                        <li>{{ item }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endfor %}
+            </section>
+
+            <!-- EDUCATION -->
+            <section class="cv-section">
+                <h2 class="cv-section__title">Education</h2>
+                {% for edu in site.education %}
+                <div class="cv-entry">
+                    <div class="cv-entry__header">
+                        <strong>{{ edu.title }}</strong>
+                        <span class="cv-entry__period">{{ edu.period }}</span>
+                    </div>
+                    <div class="cv-entry__sub">{{ edu.institution }}</div>
+                    {% if edu.description %}<p>{{ edu.description }}</p>{% endif %}
+                </div>
+                {% endfor %}
+            </section>
+
+            <!-- CERTIFICATIONS -->
+            {% if site.certifications.length %}
+            <section class="cv-section">
+                <h2 class="cv-section__title">Certifications</h2>
+                {% for cert in site.certifications %}
+                <div class="cv-entry">
+                    <div class="cv-entry__header">
+                        {% if cert.url and cert.url != "#" %}
+                        <strong><a href="{{ cert.url }}" target="_blank" rel="noopener noreferrer">{{ cert.title }}</a></strong>
+                        {% else %}
+                        <strong>{{ cert.title }}</strong>
+                        {% endif %}
+                        <span class="cv-entry__period">{{ cert.period }}</span>
+                    </div>
+                    <div class="cv-entry__sub">{{ cert.institution }}</div>
+                </div>
+                {% endfor %}
+            </section>
+            {% endif %}
+
+        </div>
+        <!-- LEFT COLUMN -->
+
+        <!-- RIGHT COLUMN -->
+        <div class="cv-col cv-col--right">
+
+            <!-- EMPLOYMENT -->
+            <section class="cv-section">
+                <h2 class="cv-section__title">Employment</h2>
+                {% for job in site.employment %}
+                <div class="cv-entry">
+                    <div class="cv-entry__header">
+                        <strong>{{ job.title }}</strong>
+                        <span class="cv-entry__period">{{ job.period }}</span>
+                    </div>
+                    <div class="cv-entry__sub">{{ job.company }}</div>
+                    <p>{{ job.description }}</p>
+                    {% if job.tech %}
+                    <p class="cv-entry__tech"><em>{{ job.tech }}</em></p>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </section>
+
+        </div>
+        <!-- RIGHT COLUMN -->
+
+    </div>
+
+</div>
