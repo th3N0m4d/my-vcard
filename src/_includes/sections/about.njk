@@ -50,7 +50,7 @@
                                 <ul class="social">
                                     {% for item in site.social %}
                                         <li>
-                                            <a class="{{ item.class }}" href="{{ item.url }}" title="{{ item.label }}">{{ item.icon | safe }}</a>
+                                            <a class="{{ item.class }}" href="{{ item.url }}" title="{{ item.label }}" target="_blank" rel="noopener noreferrer">{{ item.icon | safe }}</a>
                                         </li>
                                     {% endfor %}
                                 </ul>
@@ -71,12 +71,12 @@
                                         <span class="value">{{ site.person.location }}</span>
                                     </li>
                                     <li>
-                                        <span class="title">FREELANCE</span>
-                                        <span class="value">{{ site.person.freelance }}</span>
+                                        <span class="title">INFRA</span>
+                                        <span class="value">{{ site.person.infra }}</span>
                                     </li>
                                     <li>
-                                        <span class="title">STACK</span>
-                                        <span class="value">{{ site.person.tech }}</span>
+                                        <span class="title">DOMAINS</span>
+                                        <span class="value">{{ site.person.domains }}</span>
                                     </li>
                                     <li>
                                         <span class="title">FOCUS</span>

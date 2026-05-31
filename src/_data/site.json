@@ -6,16 +6,15 @@
   },
   "person": {
     "name": "Ed Estrela Dantas",
-    "tagline": "Senior Software Engineer",
-    "headline": "...a passionate <span class=\"label primary\">software engineer</span> and problem solver.",
-    "bio": "I create beautiful web interfaces for the digital world. I am focused on the best user experience.",
-    "birthPlace": "Your Home Town",
-    "freelance": "Available",
+    "tagline": "Platform & DevOps Engineer",
+    "headline": "...helping developers build with <span class=\"label primary\">confidence</span>",
+    "bio": "I design infrastructure with a strict focus on automation, security, and compliance, ensuring engineering teams can ship code safely and at scale.",
     "cvUrl": "#",
-    "role": "Senior Frontend / Full-Stack Engineer",
+    "role": "Platform Engineer",
     "location": "Berlin, Germany (CET)",
-    "tech": "TypeScript, React, Node, Eleventy",
-    "focus": "UI/UX, Performance, Accessibility"
+    "domains": "DevOps, Cloud Architecture, SecOps",
+    "infra": "AWS, Kubernetes, Terraform, Docker",
+    "focus": "Automation, Observability, Compliance & Code Scanning"
   },
   "skin": {
     "base": "",
@@ -27,26 +26,26 @@
     {
       "class": "github",
       "icon": "",
-      "url": "https://github.com/yourhandle",
+      "url": "https://github.com/th3N0m4d",
       "label": "GitHub"
-    },
-    {
-      "class": "whatsapp",
-      "icon": "",
-      "url": "https://wa.me/yournumber",
-      "label": "WhatsApp"
-    },
-    {
-      "class": "codepen",
-      "icon": "",
-      "url": "https://codepen.io/yourhandle",
-      "label": "CodePen"
     },
     {
       "class": "stackoverflow",
       "icon": "",
-      "url": "https://stackoverflow.com/users/yourid",
+      "url": "https://stackoverflow.com/users/6459874/n0m4d",
       "label": "Stack Overflow"
+    },
+    {
+      "class": "codepen",
+      "icon": "",
+      "url": "https://codepen.io/th3n0m4d",
+      "label": "CodePen"
+    },
+    {
+      "class": "whatsapp",
+      "icon": "",
+      "url": "https://api.whatsapp.com/send?phone=48662868789",
+      "label": "WhatsApp"
     }
   ],
   "maps": {
@@ -55,16 +54,44 @@
   },
   "employment": [
     {
-      "title": "Senior Engineer",
-      "period": "2020 - Present",
-      "company": "Your Company",
-      "description": "Describe what you did here."
+      "title": "Software Engineer",
+      "period": "2021 - Present",
+      "company": "SAP",
+      "urlToILogo": "company-logos/sap-logo.png",
+      "description": "Refactored the feature flag system using LaunchDarkly, reducing toggle setup time by 83%. Contributed to SAP Joule skills development for BMW, overseeing repo and CI/CD pipeline. Defined and enforced frontend coding guidelines across teams via code reviews and workshops. Conducted 4 internal workshops focused on advanced React, testing, and code quality. Collaborated cross-team to ensure scalable UI architecture in a shared monorepo. Coaching junior developers.",
+      "tech": "TypeScript, React, LaunchDarkly, Storybook, GitHub Actions, CI/CD, Monorepos"
     },
     {
       "title": "Software Engineer",
-      "period": "2016 - 2020",
-      "company": "Previous Company",
-      "description": "Describe what you did here."
+      "period": "2020 - 2021",
+      "company": "Anixe",
+      "urlToILogo": "company-logos/anixe-logo.svg",
+      "description": "Led code audits to identify and present architectural anti-patterns before third-party handover. Built car rental search module for OTA platform using Angular 10 and NgRx. Contributed to a component library and back-office portal in a cost-cutting rotation during COVID-19. Published internal blog posts on Firebase testing, E2E automation, and Vue/Firebase auth flows.",
+      "tech": "Angular 10, NgRx, Node.js, Firebase, Vue.js, Sass, Postman, Jest"
+    },
+    {
+      "title": "Software Engineer",
+      "period": "2019 - 2019",
+      "company": "Vonage",
+      "urlToILogo": "company-logos/vonage-logo.png",
+      "description": "Co-authored React-based UI component library using Styled Components + Storybook. Defined global UI programming guidelines for all frontend teams across the org. Mentored the team's first intern, who later received a full-time contract. Delivered talk on Functional Programming with Ramda at internal meetup.",
+      "tech": "React, Styled Components, Redux, Storybook, Webpack, Jest, Ramda"
+    },
+    {
+      "title": "Software Engineer",
+      "period": "2017 - 2018",
+      "company": "SII Poland (Client Credit Suisse)",
+      "urlToILogo": "company-logos/logo-sii.png",
+      "description": "Developed NPM package to embed static SSRS reports inside Angular apps. Modernized internal KPIs dashboard from AngularJS to Angular 5. Demoed product iterations at sprint reviews for cross-functional stakeholders.",
+      "tech": "Angular 5, AngularJS, RxJS, Jasmine, Karma, Lodash"
+    },
+    {
+      "title": "Software Engineer",
+      "period": "2015 - 2017",
+      "company": "Bank Safra",
+      "urlToILogo": "company-logos/safra-logo.png",
+      "description": "Prototyped and shipped the company's first mobile application using Vue.js and Framework7. Built a proprietary Workflow system in AngularJS and Bootstrap. Automated data extraction from legacy systems using a C# scraper and cron job.",
+      "tech": "AngularJS, Vue.js, Framework7, ASP.NET, Quartz, PL/SQL, Oracle, jQuery"
     }
   ],
   "education": [
@@ -73,6 +100,14 @@
       "period": "2012 - 2016",
       "institution": "Your University",
       "description": "Graduated with honors."
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Your Certification",
+      "period": "2024",
+      "institution": "Issuing Organization",
+      "url": "#"
     }
   ],
   "skills": {
