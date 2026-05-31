@@ -111,16 +111,22 @@
     }
   ],
   "skills": {
-    "development": [
-      { "name": "HTML5", "percent": 95 },
-      { "name": "CSS3", "percent": 85 },
-      { "name": "JavaScript", "percent": 80 },
-      { "name": "Node.js", "percent": 70 }
-    ],
-    "design": [
-      { "name": "Figma", "percent": 80 },
-      { "name": "Photoshop", "percent": 60 }
-    ]
+    "cloud": {
+      "label": "Cloud & Orchestration",
+      "items": ["AWS", "Kubernetes", "Docker", "Linux"]
+    },
+    "iac": {
+      "label": "IaC & CI/CD",
+      "items": ["Terraform", "GitHub Actions", "Ansible", "Helm"]
+    },
+    "security": {
+      "label": "Security & Compliance",
+      "items": ["Black Duck", "SonarQube", "Vault"]
+    },
+    "languages": {
+      "label": "Languages & Core Backend",
+      "items": ["TypeScript", "Node.js", "Python", "Go", "Bash"]
+    }
   },
   "portfolioFilters": [
     { "value": "*", "label": "all", "default": true },

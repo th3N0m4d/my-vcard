@@ -1628,3 +1628,38 @@ a.btn:visited:hover,
 .social li a:hover {
   color: #fff;
 }
+
+/* Skill pills */
+.skill-pills {
+  list-style: none;
+  margin: 0 0 1em 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.skill-pills li {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  line-height: 1.6;
+}
+.skill-group--cloud .skill-pills li {
+  background: #E6F4FF;
+  color: #1a5a8a;
+}
+.skill-group--iac .skill-pills li {
+  background: #F3E8FF;
+  color: #5b2d8a;
+}
+.skill-group--security .skill-pills li {
+  background: #FFEAEA;
+  color: #8a1a1a;
+}
+.skill-group--languages .skill-pills li {
+  background: #E8F7EE;
+  color: #1a6b3a;
+}
