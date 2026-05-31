@@ -9,7 +9,7 @@
     "tagline": "Platform & DevOps Engineer",
     "headline": "...helping developers build with <span class=\"label primary\">confidence</span>",
     "bio": "I design infrastructure with a strict focus on automation, security, and compliance, ensuring engineering teams can ship code safely and at scale.",
-    "cvUrl": "#",
+    "cvUrl": "/cv/",
     "role": "Platform Engineer",
     "location": "Berlin, Germany (CET)",
     "domains": "DevOps, Cloud Architecture, SecOps",
@@ -40,12 +40,6 @@
       "icon": "",
       "url": "https://codepen.io/th3n0m4d",
       "label": "CodePen"
-    },
-    {
-      "class": "whatsapp",
-      "icon": "",
-      "url": "https://api.whatsapp.com/send?phone=48662868789",
-      "label": "WhatsApp"
     }
   ],
   "maps": {

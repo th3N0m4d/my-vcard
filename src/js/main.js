@@ -84,7 +84,11 @@ $(function() {
 			
 			
 			if(Modernizr.csstransforms && Modernizr.csstransforms3d) { // modern browser
-				$('#'+ path).show().removeClass('animated ' + safeModPageOutAnimation).addClass('animated ' + safeModPageInAnimation);
+				var $target = $('#'+ path);
+				$target.removeClass('animated ' + safeModPageOutAnimation + ' ' + safeModPageInAnimation).hide();
+				// force reflow so the browser registers the class removal before re-adding
+				$target[0].offsetWidth;
+				$target.show().addClass('animated ' + safeModPageInAnimation);
 			} else { //old browser
 				$('#'+ path).fadeIn();
 				$('.page.active').hide();
