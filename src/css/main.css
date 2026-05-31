@@ -1234,6 +1234,12 @@ ul.personal-info.contact-form .title:after {
     width: 100%;
     text-align: center;
   }
+  .submit-area {
+    display: flex;
+  }
+  .btn-send {
+    width: 100%;
+  }
   .safe-mod #header .title {
     padding-top: 12px;
   }
