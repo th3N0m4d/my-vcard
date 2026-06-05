@@ -98,23 +98,7 @@ h2.caption span:after {
   padding: 20px 0 40px;
 }
 
-/* iSCROLL — replaced by native scroll, stubs kept for class compatibility */
-.iscroll-wrapper {
-  width: 100%;
-}
-.scroller {
-  width: 100%;
-}
-.iscrollbarV {
-  display: none;
-}
-.iscrollbarV > div {
-  display: none;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-}
-
-/* ------------------------------------------ 
+/* ------------------------------------------
    ---------------------  HEADER */
 #header {
   position: relative;
@@ -970,23 +954,6 @@ ul.personal-info.contact-form .title:after {
   color: #aaa;
 }
 
-/* ------------------------------------------
-   ---------------------  SAFE MOD (retained for header clearfix) */
-.safe-mod #header:before,
-.safe-mod #header:after {
-  content: " ";
-  display: table;
-}
-.safe-mod #header:after {
-  clear: both;
-}
-.safe-mod .mobile-nav,
-.safe-mod #header nav:after {
-  position: fixed;
-  top: 0px;
-  right: 12px;
-}
-
 /* ----------------------------------
    RESPONSIVE LAYOUTS
    ---------------------------------- */
@@ -996,33 +963,6 @@ ul.personal-info.contact-form .title:after {
 @media screen and (min-width: 1200px) {
   .wrapper {
     width: 1170px;
-  }
-}
-/* DESKTOP VIEW HEIGHTS */
-@media screen and (min-width: 978px) and (max-height: 600px) {
-  #header {
-    padding-top: 20px;
-  }
-  .page {
-    height: 360px;
-  }
-}
-@media screen and (min-width: 978px) and (min-height: 720px) {
-  .page {
-    height: 600px;
-  }
-}
-@media screen and (min-width: 978px) and (min-height: 900px) {
-  #header {
-    padding-top: 50px;
-  }
-  .page {
-    height: 740px;
-  }
-}
-@media screen and (min-width: 978px) and (min-height: 1000px) {
-  .page {
-    height: 800px;
   }
 }
 
@@ -1050,45 +990,6 @@ ul.personal-info.contact-form .title:after {
     width: 220px;
   }
 }
-/* TABLET VIEW HEIGHTS */
-@media screen and (max-width: 978px) and (max-height: 900px) {
-  .page {
-    height: 500px;
-  }
-  .iscroll-wrapper {
-    bottom: -140px;
-  }
-}
-@media screen and (max-width: 978px) and (max-height: 800px) {
-  .page {
-    height: 400px;
-  }
-}
-@media screen and (max-width: 978px) and (max-height: 700px) {
-  .page {
-    height: 300px;
-  }
-}
-@media screen and (max-width: 978px) and (max-height: 600px) {
-  .page {
-    height: 200px;
-  }
-}
-@media screen and (max-width: 978px) and (min-height: 900px) {
-  #header {
-    padding-top: 30px;
-  }
-  .page {
-    height: 600px;
-  }
-  .iscroll-wrapper {
-    bottom: -120px;
-  }
-  .caption {
-    margin-top: 50px;
-  }
-}
-
 /* ---------------------------------- */
 /* PHONE VIEW WIDTHS */
 @media screen and (max-width: 767px) {
@@ -1140,9 +1041,6 @@ ul.personal-info.contact-form .title:after {
   .map iframe {
     height: 200px;
   }
-  .safe-mod h2.caption {
-    margin-top: 0;
-  }
   .portfolio-field {
     padding-top: 1em;
   }
@@ -1179,9 +1077,6 @@ ul.personal-info.contact-form .title:after {
   .btn-send {
     width: 100%;
   }
-  .safe-mod #header .title {
-    padding-top: 12px;
-  }
 }
 @media screen and (max-width: 479px) {
   .wrapper {
@@ -1199,81 +1094,7 @@ ul.personal-info.contact-form .title:after {
     max-width: 80%;
   }
 }
-/* PHONE VIEW HEIGHTS */
-@media screen and (max-width: 767px) and (max-height: 900px) {
-  .page {
-    height: 700px;
-  }
-  .iscroll-wrapper {
-    top: 100px;
-    bottom: -30px;
-  }
-}
-@media screen and (max-width: 767px) and (max-height: 800px) {
-  .page {
-    height: 600px;
-  }
-  .iscroll-wrapper {
-    top: 100px;
-    bottom: -30px;
-  }
-}
-@media screen and (max-width: 767px) and (max-height: 700px) {
-  #header .title {
-    padding-top: 20px;
-  }
-  .page {
-    height: 500px;
-  }
-}
-@media screen and (max-width: 767px) and (max-height: 600px) {
-  /* Phone Portrait Layout : 320x480 */
-  #header .title {
-    padding-top: 6px;
-  }
-  .page {
-    height: 400px;
-  }
-  .iscroll-wrapper {
-    top: 90px;
-    bottom: -15px;
-  }
-}
-@media screen and (max-width: 767px) and (max-height: 440px) {
-  #header .title {
-    padding-top: 0px;
-  }
-  .page {
-    height: 300px;
-  }
-}
-@media screen and (max-width: 767px) and (max-height: 340px) {
-  /* Phone Landspace Layout : 480x320 */
-  #header .title h1 {
-    font-size: 1.2em;
-  }
-  h2 {
-    font-size: 1em;
-  }
-  .page {
-    height: 220px;
-  }
-  .iscroll-wrapper {
-    top: 80px;
-    bottom: -5px;
-  }
-}
-@media screen and (max-width: 767px) and (min-height: 900px) {
-  .page {
-    height: 800px;
-  }
-  .iscroll-wrapper {
-    top: 100px;
-    bottom: -40px;
-  }
-}
-
-/* ------------------------------------------ 
+/* ------------------------------------------
    ---------------------  CUSTOMIZATIONS */
 
 #header nav ul span,
