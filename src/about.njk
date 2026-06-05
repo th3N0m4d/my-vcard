@@ -1,0 +1,55 @@
+---
+layout: vcard-layout.njk
+permalink: /about/
+---
+<h2 class="caption"><span>ABOUT ME</span></h2>
+
+<div class="container">
+    <div class="row">
+
+        <div class="span3 profile-image">
+            <div id="te-wrapper" class="te-wrapper">
+                <div class="te-images">
+                    <img src="/images/avatar-l.png" alt="profile picture">
+                    <img src="/images/avatar-m.png" alt="profile picture">
+                </div>
+                <div class="te-cover">
+                    <img src="/images/avatar-l.png" alt="profile picture">
+                </div>
+                <div class="te-transition">
+                    <div class="te-card">
+                        <div class="te-front"></div>
+                        <div class="te-back"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="span4">
+            <h2>{{ site.person.headline | safe }}</h2>
+            <p>{{ site.person.bio }}</p>
+            <h3>Let's socialize!</h3>
+            <ul class="social">
+                {% for item in site.social %}
+                <li>
+                    <a class="{{ item.class }}" href="{{ item.url }}" title="{{ item.label }}" target="_blank" rel="noopener noreferrer">{{ item.icon | safe }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="span5">
+            <ul class="personal-info">
+                <li><span class="title">ROLE</span><span class="value">{{ site.person.role }}</span></li>
+                <li><span class="title">LOCATION</span><span class="value">{{ site.person.location }}</span></li>
+                <li><span class="title">INFRA</span><span class="value">{{ site.person.infra }}</span></li>
+                <li><span class="title">DOMAINS</span><span class="value">{{ site.person.domains }}</span></li>
+                <li><span class="title">FOCUS</span><span class="value">{{ site.person.focus }}</span></li>
+            </ul>
+            <div class="launch cv">
+                <a href="{{ site.person.cvUrl }}" class="btn" target="_blank" rel="noopener noreferrer">PREVIEW CV</a>
+            </div>
+        </div>
+
+    </div>
+</div>

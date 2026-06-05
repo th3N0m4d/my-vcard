@@ -1,0 +1,63 @@
+---
+layout: vcard-layout.njk
+permalink: /resume/
+---
+<h2 class="caption"><span>RESUME</span></h2>
+
+<div class="container">
+    <div class="row">
+
+        <div class="span6">
+
+            <div class="history-group">
+                <h3><span class="label black">Employment</span></h3>
+                {% for job in site.employment %}
+                <div class="history-unit">
+                    <h4>{{ job.title }} <span class="work-time">{{ job.period }}</span></h4>
+                    <h5>{{ job.company }}</h5>
+                    <p>{{ job.description }}</p>
+                </div>
+                {% endfor %}
+            </div>
+
+            <div class="history-group">
+                <h3><span class="label black">Education</span></h3>
+                {% for edu in site.education %}
+                <div class="history-unit">
+                    <h4>{{ edu.title }} <span class="work-time">{{ edu.period }}</span></h4>
+                    <h5>{{ edu.institution }}</h5>
+                    <p>{{ edu.description }}</p>
+                </div>
+                {% endfor %}
+            </div>
+
+            <div class="history-group">
+                <h3><span class="label black">Certifications</span></h3>
+                {% for cert in site.certifications %}
+                <div class="history-unit">
+                    <h4>
+                        {% if cert.url %}<a href="{{ cert.url }}" target="_blank" rel="noopener noreferrer">{{ cert.title }}</a>{% else %}{{ cert.title }}{% endif %}
+                        <span class="work-time">{{ cert.period }}</span>
+                    </h4>
+                    <h5>{{ cert.institution }}</h5>
+                </div>
+                {% endfor %}
+            </div>
+
+        </div>
+
+        <div class="span5 offset1">
+            {% for key, group in site.skills %}
+            <div class="history-group skill-group skill-group--{{ key }}">
+                <h3><span class="label black">{{ group.label }}</span></h3>
+                <ul class="skill-pills">
+                    {% for item in group.items %}
+                    <li>{{ item }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endfor %}
+        </div>
+
+    </div>
+</div>

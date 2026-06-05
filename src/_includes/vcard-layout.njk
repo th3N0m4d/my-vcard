@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+{% include "head.njk" %}
+
+<body>
+
+    {% include "header.njk" %}
+
+    <div id="pages">
+        <section class="page wrapper active animated fadeIn">
+            {{ content | safe }}
+        </section>
+    </div>
+
+    <div class="loader"></div>
+
+</body>
+</html>
