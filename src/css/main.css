@@ -95,7 +95,7 @@ h2.caption span:after {
   width: 100%;
 }
 .page {
-  padding: 20px 0 40px;
+  padding: 40px 0 40px;
 }
 
 /* ------------------------------------------
@@ -993,6 +993,13 @@ ul.personal-info.contact-form .title:after {
 /* ---------------------------------- */
 /* PHONE VIEW WIDTHS */
 @media screen and (max-width: 767px) {
+  h2.caption {
+    margin: 20px 0 20px 0;
+  }
+
+  .page {
+    padding: 0;
+  }
   .wrapper {
     width: 460px;
   }
@@ -1446,13 +1453,19 @@ a.btn:visited:hover,
   font-size: 0.875rem;
   color: #fff;
   opacity: 0;
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
   z-index: 9999;
   white-space: nowrap;
   pointer-events: none;
 }
-#toast.success { background: #396; }
-#toast.error   { background: #c0392b; }
+#toast.success {
+  background: #396;
+}
+#toast.error {
+  background: #c0392b;
+}
 #toast.visible {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
