@@ -30,22 +30,18 @@ social:
     icon: ""
     url: https://stackoverflow.com/users/6459874/n0m4d
     label: Stack Overflow
-  - class: codepen
-    icon: ""
-    url: https://codepen.io/th3n0m4d
-    label: CodePen
 
 maps:
   embedUrl: "http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=new+york&ie=UTF8&t=m&z=14&output=embed"
   label: Where am I in this world?
 
 employment:
-  - title: Software Engineer
+  - title: Platform Engineer
     period: "2021 - Present"
     company: SAP
     urlToILogo: company-logos/sap-logo.png
-    description: "Refactored the feature flag system using LaunchDarkly, reducing toggle setup time by 83%. Contributed to SAP Joule skills development for BMW, overseeing repo and CI/CD pipeline. Defined and enforced frontend coding guidelines across teams via code reviews and workshops. Conducted 4 internal workshops focused on advanced React, testing, and code quality. Collaborated cross-team to ensure scalable UI architecture in a shared monorepo. Coaching junior developers."
-    tech: "TypeScript, React, LaunchDarkly, Storybook, GitHub Actions, CI/CD, Monorepos"
+    description: "Joined the Hyperspace team through a fellowship program, growing into a platform and security leadership role. Serve as Security Champion, driving secure-by-default practices across the team. Nominated to the security work stream for Project Horizon, a regional migration to BTP. Configured CI/CD workflows using Piper and GitHub Actions; managed secrets with Vault. Contributed to SAP Joule skills development for BMW, overseeing repo and pipeline. Defined and enforced engineering guidelines via code reviews and internal workshops."
+    tech: "GitHub Actions, Piper, Vault, AWS, Kubernetes, Terraform, TypeScript, CI/CD"
 
   - title: Software Engineer
     period: "2020 - 2021"
@@ -77,15 +73,20 @@ employment:
 
 education:
   - title: BSc Computer Science
-    period: "2012 - 2016"
-    institution: Your University
-    description: Graduated with honors.
+    period: "2005 - 2009"
+    institution: Uninove - Universidade Nove de Julho
+    description: Bachelor's degree in Computer Science.
+
+  - title: The Number Mysteries, Mathematics
+    period: "2021"
+    institution: University of Oxford, Department for Continuing Education
+    description: ""
 
 certifications:
-  - title: Your Certification
-    period: "2024"
-    institution: Issuing Organization
-    url: "#"
+  - title: AWS Cloud Practitioner
+    period: "2028"
+    institution: Amazon Web Services
+    url: "https://www.credly.com/badges/6b9f5e76-03ba-4fc2-8d99-8be26d37919b/public_url"
 
 skills:
   cloud:
