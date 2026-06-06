@@ -23,13 +23,15 @@ skin:
 
 social:
   - class: github
-    icon: ""
     url: https://github.com/th3N0m4d
     label: GitHub
   - class: stackoverflow
-    icon: ""
     url: https://stackoverflow.com/users/6459874/n0m4d
     label: Stack Overflow
+  - class: dev-dot-to
+    url: https://dev.to/th3n0m4d
+    label: dev.to
+
 
 maps:
   embedUrl: "http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=new+york&ie=UTF8&t=m&z=14&output=embed"
