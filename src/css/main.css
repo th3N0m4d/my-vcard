@@ -846,11 +846,17 @@ ul.personal-info.contact-form .title:after {
 .social li a.friendfeed:hover {
   background-color: #2f72c4;
 }
-.social li a.github:hover {
-  background-color: #d0d7de;
-}
 .social li a.wordpress:hover {
   background-color: #0083b3;
+}
+.social li a.github:hover {
+  background-color: #82cfea;
+}
+.social li a.dev-dot-to:hover {
+  background-color: #82cfea;
+}
+.social li a.stackoverflow:hover {
+  background-color: #82cfea;
 }
 .social li a.pinterest,
 .social li a.soundcloud {
@@ -894,27 +900,17 @@ ul.personal-info.contact-form .title:after {
 .social li a.dev-dot-to {
   background-image: url(../images/social/dev-dot-to.png);
 }
-.social li a.dev-dot-to:hover {
-  background-color: #d6d6d7;
-}
+
 .social li a.whatsapp {
   background-image: url(../images/social/whatsapp.png);
-}
-.social li a.whatsapp:hover {
-  background-color: #25d366;
 }
 .social li a.codepen {
   background-image: url(../images/social/codepen.png);
 }
-.social li a.codepen:hover {
-  background-color: #000;
-}
 .social li a.stackoverflow {
   background-image: url(../images/social/stackoverflow.png);
 }
-.social li a.stackoverflow:hover {
-  background-color: #f58025;
-}
+
 @media screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-device-pixel-ratio: 1.5) {
   .social li a.pinterest {
     background-image: url(../images/bckg/pinterest-icon@2x.png);
