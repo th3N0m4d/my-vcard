@@ -763,12 +763,25 @@ ul.personal-info.contact-form .title:after {
   margin-bottom: -3px;
 }
 .social li a {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   float: left;
+  width: 51.74px;
+  height: 52.47px;
   line-height: 90%;
   font-family: "JustVectorRegular";
   font-size: 3em;
-  padding: 0.2em 0.2em 0.15em 0.2em;
+  color: #333333;
+  background-color: #eeeeee;
+  padding: 8.4px 8.4px 6.3px 8.4px;
+  box-sizing: border-box;
+}
+.social li a img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 .social li a:hover {
   background-color: #000;
@@ -834,7 +847,7 @@ ul.personal-info.contact-form .title:after {
   background-color: #2f72c4;
 }
 .social li a.github:hover {
-  background-color: #000;
+  background-color: #d0d7de;
 }
 .social li a.wordpress:hover {
   background-color: #0083b3;
@@ -864,6 +877,7 @@ ul.personal-info.contact-form .title:after {
 .social li a.whatsapp,
 .social li a.codepen,
 .social li a.stackoverflow,
+.social li a.dev-dot-to,
 .social li a.github {
   text-indent: -999em;
   min-width: 0.84em;
@@ -875,22 +889,28 @@ ul.personal-info.contact-form .title:after {
   padding-bottom: 0.525em;
 }
 .social li a.github {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E");
+  background-image: url(../images/social/github.png);
+}
+.social li a.dev-dot-to {
+  background-image: url(../images/social/dev-dot-to.png);
+}
+.social li a.dev-dot-to:hover {
+  background-color: #d6d6d7;
 }
 .social li a.whatsapp {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z'/%3E%3C/svg%3E");
+  background-image: url(../images/social/whatsapp.png);
 }
 .social li a.whatsapp:hover {
   background-color: #25d366;
 }
 .social li a.codepen {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M24 8.182l-.018-.087-.017-.05c-.01-.024-.018-.05-.03-.075-.003-.018-.015-.034-.02-.05l-.035-.067-.03-.05-.044-.06-.046-.045-.06-.045-.046-.03-.06-.044-.044-.04-.015-.02L12.58.19c-.347-.232-.796-.232-1.142 0L.453 7.502l-.015.017-.044.04-.06.045-.046.03-.06.045-.044.06-.03.05-.04.067-.015.05c-.01.025-.018.05-.029.075l-.016.05L0 8.18v7.497l.016.083.017.05c.01.025.018.05.029.075l.015.05.04.067.03.05.044.06.046.045.06.044.046.03.06.045.044.04.015.02 11.005 7.32c.173.115.378.173.58.173s.406-.058.58-.173l11.004-7.32.015-.02.044-.04.06-.045.046-.03.06-.044.046-.045.044-.06.03-.05.04-.067.015-.05c.01-.025.018-.05.029-.075l.016-.05.013-.083V8.18zm-7.861 1.074l-3.418 2.27V6.198l3.418 2.27zM12 3.475l2.914 1.94-2.914 1.936-2.914-1.937L12 3.475zm-1.721 5.051L6.86 9.256 3.443 7.254l3.417-2.271 3.42 2.27zm-5.44 2.259l2.404 1.597-2.404 1.597V10.785zm5.44 5.19L6.86 13.705l-3.417-2.27 3.417 2.27.86-.571.86.57L12 15.975zm1.721-5.19l2.404 1.597-2.404 1.597V10.785zm0 7.17l-2.913-1.937 2.913-1.936 2.914 1.936-2.914 1.937zm1.721-2.02L16.86 13.705l3.418-2.27-3.418 2.27-.86-.57-.86.57zm5.44-2.26l-2.404-1.596 2.404-1.597v3.193z'/%3E%3C/svg%3E");
+  background-image: url(../images/social/codepen.png);
 }
 .social li a.codepen:hover {
   background-color: #000;
 }
 .social li a.stackoverflow {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M18.986 21.865v-6.404h2.134V24H1.844v-8.539h2.13v6.404h15.012zM6.111 19.731H16.85v-2.137H6.111v2.137zm.259-4.852l10.48 2.189.451-2.07-10.478-2.187-.453 2.068zm1.359-5.056l9.705 4.53.903-1.95-9.706-4.53-.902 1.95zm2.715-4.785l8.217 6.855 1.359-1.62-8.216-6.853-1.36 1.618zM13.705 0l-1.735 1.233 6.379 8.927 1.736-1.233L13.705 0z'/%3E%3C/svg%3E");
+  background-image: url(../images/social/stackoverflow.png);
 }
 .social li a.stackoverflow:hover {
   background-color: #f58025;
