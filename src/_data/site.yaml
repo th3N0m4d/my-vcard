@@ -43,7 +43,7 @@ employment:
     company: SAP
     urlToILogo: company-logos/sap-logo.png
     description: "Joined the Hyperspace team through a fellowship program, growing into a platform and security leadership role. Serve as Security Champion, driving secure-by-default practices across the team. Nominated to the security work stream for Project Horizon, a regional migration to BTP. Configured CI/CD workflows using Piper and GitHub Actions; managed secrets with Vault. Contributed to SAP Joule skills development for BMW, overseeing repo and pipeline. Defined and enforced engineering guidelines via code reviews and internal workshops."
-    tech: "GitHub Actions, Piper, Vault, AWS, Kubernetes, Terraform, TypeScript, CI/CD"
+    tech: "GitHub Actions, Piper, Vault, ArgoCD, BlackDuck, SonarQube, TypeScript, Python, CI/CD"
 
   - title: Software Engineer
     period: "2020 - 2021"
