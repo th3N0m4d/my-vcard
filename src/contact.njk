@@ -2,24 +2,39 @@
 layout: vcard-layout.njk
 permalink: /contact/
 ---
-<h2 class="caption"><span>CONTACT</span></h2>
 
+<h2 class="caption">
+    <span>CONTACT</span>
+</h2>
 <div class="row">
-
     <div class="map span7">
         <h3>{{ site.maps.label }}</h3>
         <img src="/images/contact_map.jpg" alt="Map">
     </div>
-
     <div class="span5">
         <h3>Drop me a line!</h3>
-        <form id="contact-form" name="contact" action="/" method="post" data-netlify="true" class="validate-form">
+        <form
+            id="contact-form"
+            name="contact"
+            action="/"
+            method="post"
+            data-netlify="true"
+            data-netlify-turnstile="#turnstile-widget"
+            class="validate-form">
             <input type="hidden" name="form-name" value="contact">
             <fieldset>
                 <ul class="personal-info contact-form">
-                    <li><label class="title" for="name">NAME</label><input class="text required" id="name" name="name" type="text" placeholder="What is your name?"></li>
-                    <li><label class="title" for="email">E-MAIL</label><input class="text required email" id="email" name="email" type="text" placeholder="So i can get back to you."></li>
-                    <li><label class="title" for="message">MESSAGE</label><textarea class="text required" id="message" name="message" placeholder="And your message to me..."></textarea></li>
+                    <li>
+                        <label class="title" for="name">NAME</label><input class="text required" id="name" name="name" type="text" placeholder="What is your name?"></li>
+                    <li>
+                        <label class="title" for="email">E-MAIL</label><input class="text required email" id="email" name="email" type="text" placeholder="So i can get back to you."></li>
+                    <li>
+                        <label class="title" for="message">MESSAGE</label>
+                        <textarea class="text required" id="message" name="message" placeholder="And your message to me..."></textarea>
+                    </li>
+                    <li>
+                        <div id="turnstile-widget" class="cf-turnstile" data-sitekey="0x4AAAAAADjHs_zJZ9kJelE1" data-theme="light"></div>
+                    </li>
                     <li class="submit-area">
                         <button type="submit" class="btn-send">SEND</button>
                         <input type="hidden" name="submitted" id="submitted" value="true">
@@ -29,5 +44,4 @@ permalink: /contact/
             </fieldset>
         </form>
     </div>
-
 </div>

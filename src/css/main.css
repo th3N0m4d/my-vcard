@@ -1486,3 +1486,7 @@ a.btn:visited:hover,
   opacity: 1;
   transform: translateX(-50%) translateY(0);
 }
+
+ul.personal-info.contact-form .cf-turnstile {
+  margin-top: 0.5rem;
+}
